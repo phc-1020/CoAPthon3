@@ -171,7 +171,7 @@ class MessageLayer(object):
         elif message.type == defines.Types["RST"]:
             if not transaction.request.acknowledged:
                 transaction.request.rejected = True
-            elif not transaction.response.acknowledged:
+            elif (transaction.response is not None) && (not transaction.response.acknowledged):
                 transaction.response.rejected = True
         elif message.type == defines.Types["CON"]:
             #implicit ACK (might have been lost)
