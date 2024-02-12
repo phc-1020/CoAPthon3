@@ -132,6 +132,9 @@ class Serializer(object):
         except UnicodeDecodeError as e:
             logger.debug(e)
             return defines.Codes.BAD_REQUEST.number
+        except UnicodeEncodeError as e:
+            logger.debug(e)
+            return defines.Codes.BAD_REQUEST.number
 
     @staticmethod
     def serialize(message):
