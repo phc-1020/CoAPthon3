@@ -244,6 +244,8 @@ class Codes(object):
         95: CONTINUE,
 
         128: BAD_REQUEST,
+        129: UNAUTHORIZED,
+        130: BAD_OPTION,
         131: FORBIDDEN,
         132: NOT_FOUND,
         133: METHOD_NOT_ALLOWED,
