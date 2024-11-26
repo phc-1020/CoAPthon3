@@ -3,7 +3,7 @@ import datetime
 
 setup(
     name='CoAPthon3',
-    version='1.0.1+fb.' + datetime.datetime.now().strftime("%Y%m%d%H%M"),
+    version='1.0.1+phc-1020_' + datetime.datetime.now().strftime("%Y%m%d"),
     packages=[
         'coapthon',
         'coapthon.caching',
@@ -20,7 +20,7 @@ setup(
     author_email='giacomo.tanganelli@for.unipi.it',
     maintainer="Bjoern Freise",
     maintainer_email="mcfreis@gmx.net",
-    url="https://github.com/mcfreis/CoAPthon3",
+    url="https://github.com/phc-1020/CoAPthon3",
     description='CoAPthon is a python library to the CoAP protocol.',
     scripts=[
         'coapclient.py',
