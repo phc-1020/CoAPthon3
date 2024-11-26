@@ -3,7 +3,7 @@ import datetime
 
 setup(
     name='CoAPthon3',
-    version='1.0.1+phc-1020_' + datetime.datetime.now().strftime("%Y%m%d"),
+    version='1.0.3+phc-1020_' + datetime.datetime.now().strftime("%Y%m%d"),
     packages=[
         'coapthon',
         'coapthon.caching',
